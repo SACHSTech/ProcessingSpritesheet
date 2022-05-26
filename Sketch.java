@@ -87,10 +87,17 @@ public class Sketch extends PApplet {
     // draw mario
     image(mario_frames[(frameCount/3)%intMario_frames], intMarioX, intMarioY);
     intMarioX++;
+    if(intMarioX > width){
+      intMarioX = 0 - intMario_frameWidth;
+    }
 
     // draw sonic
     image(sonic_frames[(frameCount/3)%intSonic_frames], intSonicX, intSonicY);
     intSonicX += 2;
+
+    if(intSonicX > width){
+      intSonicX = 0 - intSonic_frameWidth;
+    }
     
   }
 }
