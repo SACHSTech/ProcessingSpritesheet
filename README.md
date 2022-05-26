@@ -1,1 +1,1 @@
-# Images and Animation Demo
+# Processing Spritesheet Demo
